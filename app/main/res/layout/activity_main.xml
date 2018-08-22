@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.td.visitor.MainActivity"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_changer">
+
+            <include android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                layout="@layout/activity_logo"/>
+
+            <include android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/message_area"/>
+
+            <include android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/notification_reception"/>
+
+            <include android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/message_list"/>
+
+            <include android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/message_list_time"/>
+
+            <include android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/message_list_time_visitor"/>
+
+            <include android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/chairman_view"/>
+
+            <include android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/chairman_msg_reception"/>
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/tab_home"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_home"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/tab_message"
+            android:src="@mipmap/ic_pencil_box"
+            android:layout_marginLeft="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tab_home" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/tab_notification"
+            android:src="@mipmap/ic_bell_green"
+            android:layout_marginLeft="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tab_message" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/tab_message_list"
+            android:src="@mipmap/ic_more"
+            android:layout_marginLeft="19dp"
+            android:layout_alignTop="@+id/tab_notification"
+            android:layout_toEndOf="@+id/tab_notification"
+            android:layout_marginTop="-2dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/logout_img"
+            android:src="@mipmap/ic_lock_unlocked"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tab_message_list"
+            android:layout_marginTop="-2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/tab_home"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:textSize="10dp"
+            android:layout_marginTop="-5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/tab_message"
+            android:layout_alignStart="@+id/tab_message"
+            android:layout_marginTop="-5dp"
+            android:textSize="10dp"
+            android:layout_marginLeft="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/tab_notification"
+            android:layout_alignStart="@+id/tab_notification"
+            android:layout_marginTop="-5dp"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="-2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List"
+            android:id="@+id/textView12"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignEnd="@+id/tab_message_list"
+            android:textSize="10dp"
+            android:layout_marginRight="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/textView8"
+            android:layout_alignBottom="@+id/logout_img"
+            android:layout_alignParentEnd="true"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="-11dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

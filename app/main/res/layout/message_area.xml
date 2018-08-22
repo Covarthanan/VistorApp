@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#e3e1e1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Message"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:textColor="#FF7BB629"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_name"
+            android:background="@drawable/texteditor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:hint="Name of the Person"
+            android:layout_margin="20dp"
+            android:textColor="#050800"
+            android:textColorHint="#050800" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_chairman"
+            android:background="@drawable/texteditor"
+            android:entries="@array/meet_person"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="#FF7BB629" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_type"
+            android:background="@drawable/texteditor"
+            android:entries="@array/message_type"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="#FF7BB629" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/msg_info"
+            android:background="@drawable/texteditor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:hint="Information"
+            android:layout_margin="20dp"
+            android:textColor="#050800"
+            android:textColorHint="#050800" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/msg_date"
+            android:background="@drawable/texteditor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:hint="Date"
+            android:layout_margin="20dp"
+            android:textColor="#050800"
+            android:textColorHint="#050800" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/msg_time"
+            android:background="@drawable/texteditor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:hint="Time"
+            android:layout_margin="20dp"
+            android:textColor="#050800"
+            android:textColorHint="#050800" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_priority"
+            android:background="@drawable/texteditor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:entries="@array/message_priority"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="#FF7BB629" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Push Message"
+            android:id="@+id/btn_push"
+            android:background="@drawable/login_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</ScrollView>

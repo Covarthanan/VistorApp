@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/msg_list_visitor_name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/msg_list_visitor_meeting"
+        android:layout_below="@+id/msg_list_visitor_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:paddingStart="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/msg_list_visitor_type"
+        android:layout_below="@+id/msg_list_visitor_meeting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:paddingStart="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/msg_list_visitor_info"
+        android:layout_below="@+id/msg_list_visitor_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:paddingStart="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/msg_list_visitor_date"
+        android:layout_below="@+id/msg_list_visitor_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:paddingStart="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/msg_list_visitor_time"
+        android:layout_below="@+id/msg_list_visitor_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:paddingStart="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/msg_list_visitor_priority"
+        android:layout_below="@+id/msg_list_visitor_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:paddingStart="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/message_visitor_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/roundimage"
+        android:src="@mipmap/ic_bell_ring"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp" />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_box"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/chairman_dialog_box"
+        android:layout_alignBottom="@+id/msg_list_visitor_date"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Do you want accept or reject the appointment ?"
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="Reject"
+            android:id="@+id/dialog_reject_btn"
+            android:background="@drawable/dialog_btn"
+            android:layout_marginRight="30dp"
+            android:textColor="#cd3d3d"
+            android:textSize="10dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="Wait"
+            android:id="@+id/dialog_wait_btn"
+            android:background="@drawable/dialog_btn"
+            android:layout_alignTop="@+id/dialog_reject_btn"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ee8420"
+            android:textSize="10dp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="Accept"
+            android:id="@+id/dialog_accept_btn"
+            android:background="@drawable/dialog_btn"
+            android:layout_alignTop="@+id/dialog_wait_btn"
+            android:layout_toEndOf="@+id/dialog_wait_btn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ring Bell"
+        android:id="@+id/text_view_ring_bell"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/message_visitor_edit"
+        android:layout_marginBottom="22dp"
+        android:textSize="10dp"
+        android:layout_marginRight="9dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>

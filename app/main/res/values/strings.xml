@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Visitor</string>
+
+    <string-array name="meet_person">
+        <item>Choose the meeting person</item>
+        <item>Chairman</item>
+        <item>Deputy Chairman</item>
+    </string-array>
+
+    <string-array name="message_type">
+        <item>Choose the type of message</item>
+        <item>Waiting to See you</item>
+        <item>Like to See you</item>
+        <item>Like to talk to you</item>
+        <item>To Remind</item>
+    </string-array>
+
+    <string-array name="message_priority">
+        <item>Choose the priority</item>
+        <item>Ordinary</item>
+        <item>Urgent</item>
+        <item>Immediate</item>
+    </string-array>
+
+
+</resources>
